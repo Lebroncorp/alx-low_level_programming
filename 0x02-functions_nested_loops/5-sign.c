@@ -1,5 +1,17 @@
 #include "main.h"
 
+/**
+ * print_sign - prints the sign of a number
+ *
+ * Description: prints using the if loop,
+ * + if the number is greater than 0,
+ *  prints 0 if the number is equaul to
+ *   zero or else prints -
+ *   @n: type int
+ *
+ * Return: int
+ */
+
 int print_sign(int n)
 {
 	if (n > 0)
