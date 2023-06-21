@@ -1,11 +1,14 @@
 #include "main.h"
 
 /**
- * _islower - check the code
+ * _islower - checks for lower case
+ * and upper case letters.
  *
- * Description: checks for lower class alphabets
- * @c
- * return type int
+ * Description: prints  if
+ * for lower case letters or.
+ * @c: input of type int
+ *
+ * return int
  */
 
 int _islower(int c)
