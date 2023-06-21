@@ -1,9 +1,14 @@
 #include "main.h"
 
 /**
- * _isalpha - check for alphabets
- * Description: lower and upper case letter
- * @c return type 0
+ * _isalpha - checks for alphabets
+ *
+ * Description:prints lower and upper
+ *  case letters by looping through
+ *  their ascii code.
+ * @c: input of type int
+ *
+ * Return: int
  */
 
 int _isalpha(int c)
