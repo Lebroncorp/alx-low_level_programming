@@ -2,7 +2,12 @@
 
 /**
  * *main - Entry point
- * Description: prints _putchar
+ *
+ * Description: prints _putchar by
+ *  looping through the index number
+ *   of the string _putchar
+ *   till it gets to null
+ *
  * Return: Always 0 (success)
  */
 
