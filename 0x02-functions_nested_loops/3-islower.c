@@ -8,7 +8,7 @@
  * for lower case letters or.
  * @c: input of type int
  *
- * return int
+ * Return: int
  */
 
 int _islower(int c)
