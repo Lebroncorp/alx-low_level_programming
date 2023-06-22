@@ -8,7 +8,7 @@
  * prints zero for number 0 and
  * prints negative for numbers less than zero.
  *
- * @i: int
+ * @i: type int
  */
 
 void positive_or_negative(int i)
