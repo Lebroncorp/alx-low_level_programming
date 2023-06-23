@@ -3,9 +3,8 @@
 /**
  * _isupper - checks for upper case letters.
  *
- * Description:loops through the ascii table
- * putchar 1 if it is upper case letters or
- * putchars 0.
+ * Description: prints 1 for upper case
+ * letters or prints 0.
  * @c: input type int
  *
  * Return: int
@@ -13,15 +12,12 @@
 
 int _isupper(int c)
 {
-	char letters = 'c';
-
-	for (c >= 65 && c <= 90)
+	if (c >= 65 && c <= 90)
 	{
-		_putchar(1);
+		return(1);
 	}
 	else
 	{
-		_putchar(0);
+		return(0);
 	}
-	return (0);
 }
