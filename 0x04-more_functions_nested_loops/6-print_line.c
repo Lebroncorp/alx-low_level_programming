@@ -4,12 +4,17 @@
  *
  */
 
-void print_diagonal(int n)
+void print_line(int n)
 {
-	for (n = 0; n < 100; n++)
+	int times;
+	
+	times = n + 1;
+	for (n = 0; n < times; n++)
 	{
-		_putchar('_');
+		if (n > 0)
+		{
+			_putchar('_');
+		}
 	}
+	_putchar('\n');
 }
-
-
