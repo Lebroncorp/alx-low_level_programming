@@ -1,6 +1,7 @@
-#include "main.h
+#include "main.h"
+#include <string.h>
 
-"/**
+/**
  * rev_string - reverses a string
  *
  * Description: reverses a string. does not
