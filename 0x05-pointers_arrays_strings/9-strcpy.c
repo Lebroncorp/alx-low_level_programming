@@ -7,7 +7,7 @@
  * @dest: char type
  * @src: char type
  *
- * Return: char 
+ * Return: char
  */
 
 char *_strcpy(char *dest, char *src)

@@ -1,7 +1,9 @@
 #include "main.h"
 #include <string.h>
 /**
+ * puts2 - prints every other letter
  *
+ * @str: type char
  */
 
 void puts2(char *str)
