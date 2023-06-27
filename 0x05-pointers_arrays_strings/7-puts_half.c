@@ -2,22 +2,28 @@
 #include <string.h>
 
 /**
- * puts_half - prints half the string
+ * puts_half - prints half
  *
- * @str: char type
+ * @str: type char
  */
 
 void puts_half(char *str)
 {
+	int a;
 	int n;
 	int length = strlen(str);
 
-	n = length / 2;
-	while (str[n] != '\0')
+	if (length % 2 != 0)
 	{
-		_putchar(str[n]);
-		n++;
+		n = (length - 1) / 2;
+	}
+	else
+	{
+		n = length / 2;
+	}
+	for (a = n; str[a] != '\0'; a++)
+	{
+		_putchar(str[a]);
 	}
 	_putchar('\n');
-
 }
