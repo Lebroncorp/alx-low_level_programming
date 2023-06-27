@@ -2,7 +2,9 @@
 #include <string.h>
 
 /**
+ * puts_half - prints half the string
  *
+ * @str: char type
  */
 
 void puts_half(char *str)
