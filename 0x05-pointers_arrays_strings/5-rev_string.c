@@ -2,13 +2,12 @@
 #include <string.h>
 
 /**
- * rev_string - reverses a string
+ * rev_string - reverses string
  *
- * Description: reverses a string. does not
- * print to stdout and returns nothing
+ * Description: reverses a string and does not
+ * print to stdout
  * @s: string input
  *
- * Return: nothing
  */
 
 void rev_string(char *s)
@@ -17,7 +16,9 @@ void rev_string(char *s)
 	char temp;
 
 	for (i = 0; s[i] != '\0'; i++)
+	{
 		count++;
+	}
 
 	for (i = 0, j = count - 1; i < j; i++, j--)
 	{
