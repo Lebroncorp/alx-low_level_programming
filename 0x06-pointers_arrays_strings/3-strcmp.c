@@ -5,6 +5,7 @@
  *
  * @s1: char type
  * @s2: char type
+ * Return: j
  */
 
 int _strcmp(char *s1, char *s2)
