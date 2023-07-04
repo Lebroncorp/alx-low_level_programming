@@ -6,7 +6,7 @@
  * @s: char type pointer
  * @accept: char type pointer
  *
- * Return:
+ * Return: count
  */
 
 unsigned int _strspn(char *s, char *accept)
@@ -15,11 +15,11 @@ unsigned int _strspn(char *s, char *accept)
 	int b;
 	unsigned int count = 1;
 
-	for(a = 0; accept[a] != '\0'; a++)
+	for (a = 0; accept[a] != '\0'; a++)
 	{
-		for(b = 0; s[b] != '\0'; b++)
+		for (b = 0; s[b] != '\0'; b++)
 		{
-			if(accept[a] == s[b])
+			if (accept[a] == s[b])
 			{
 				count++;
 				break;
