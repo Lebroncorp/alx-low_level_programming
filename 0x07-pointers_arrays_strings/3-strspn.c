@@ -3,30 +3,36 @@
 /**
  * _strspn - gets the length of a prefix substring
  *
- * @s: char type pointer
- * @accept: char type pointer
+ * @s: given string char type pointer
+ * @accept: given substring char type pointer
  *
- * Return: count
+ * Return: unsigned int
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int a;
-	int b;
+	char *a;
 	unsigned int count = 0;
-	unsigned int a_length = 0;
+	int isAcceptable;
 
-	for (a = 0; accept[a] != '\0'; a++)
+	while (*s)
 	{
-		for (b = 0; s[b] != '\0'; b++)
+		isAcceptable = 0;
+
+		for (a = accept; *a; a++)
 		{
-			if (accept[a] == s[b])
+			if (*s == *a)
 			{
-				count++;
+				isAcceptable = 1;
 				break;
 			}
 		}
-		a_length++;
+		if (!isAcceptable)
+		{
+			break;
+		}
+		count++;
+		s++;
 	}
-	return (a_length);
+	return (count);
 }
