@@ -13,7 +13,8 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int a;
 	int b;
-	unsigned int count = 1;
+	unsigned int count = 0;
+	unsigned int a_length = 0;
 
 	for (a = 0; accept[a] != '\0'; a++)
 	{
@@ -25,6 +26,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
+		a_length++;
 	}
-	return (count);
+	return (a_length);
 }
