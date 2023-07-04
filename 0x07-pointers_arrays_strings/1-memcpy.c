@@ -5,7 +5,7 @@
  *
  * @dest: char type pointer
  * @src: char type pointer
- * @n unsigned int type
+ * @n: unsigned int type
  *
  * Return: dest
  */
