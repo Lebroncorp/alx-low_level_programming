@@ -1,6 +1,26 @@
 #include "main.h"
 
-int _abs(int n)
+/**
+ * _abs - prints absolute value of an integer
+ *
+ * Description: divides input by -1 and prints
+ * the result.
+ * @a: type of int
+ *
+ * Return: returns 0
+ */
+
+int _abs(int a)
 {
-	return (0);
+	int b;
+
+	if (a  < 0)
+	{
+		b = a / -1;
+	}
+	else
+	{
+		b = a;
+	}
+	return (b);
 }
