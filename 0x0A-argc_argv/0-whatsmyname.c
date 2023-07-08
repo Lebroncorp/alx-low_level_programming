@@ -5,7 +5,7 @@
  * main - entry point
  *
  * @argc: int type
- * @argv: char typr pointer
+ * @argv: char type pointer
  *
  * Return: 0
  */
