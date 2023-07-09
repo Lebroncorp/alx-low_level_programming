@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+
 
 /**
  * main - entry point
@@ -12,7 +12,12 @@
 
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[argc * 0]);
+	int n;
+
+	for (n = 0; n < argc; n++)
+	{
+	printf("%s\n", argv[n]);
+	}
 
 	return (0);
 }
