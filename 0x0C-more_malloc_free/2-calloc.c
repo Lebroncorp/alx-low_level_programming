@@ -7,6 +7,8 @@
  *
  * @nmemb: unsigned int
  * @size: unsigned int
+ *
+ * Return: ptr
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
