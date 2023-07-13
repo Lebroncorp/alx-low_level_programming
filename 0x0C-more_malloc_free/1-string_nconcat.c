@@ -13,6 +13,7 @@
 unsigned int _strlen(char *s)
 {
 	unsigned int size = 0;
+
 	for (; s[size] != '\0'; size++)
 		;
 	return (size);
@@ -33,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int a;
 	unsigned int b;
 	char *m;
-	
+
 	if (s1 == NULL)
 	{
 	s1 = "";
