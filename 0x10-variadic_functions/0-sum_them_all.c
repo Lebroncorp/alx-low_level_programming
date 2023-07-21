@@ -2,7 +2,12 @@
 #include <stdarg.h>
 
 /**
+ * sum_them_all - returns sum of all its parameters
  *
+ * @n: number of parameters represented with ellipsis
+ *
+ * Return: the sum of the parameters (sm)
+ * or return o if no arguement is passed.
  */
 
 int sum_them_all(const unsigned int n, ...)
