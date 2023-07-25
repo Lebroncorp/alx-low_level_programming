@@ -1,7 +1,25 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void print_opcodes(int opcde);
+/**
+ * print_opcodes - prints opcodes
+ *
+ * @opcde: int argument
+ *
+ * Return: nothing
+ */
+
+void print_opcodes(int opcde)
+{
+	int n;
+	unsigned char *ptr;
+
+	ptr = (unsigned char *)print_opcodes;
+	for (n = 0; n < opcde; n++)
+		printf("%02x ", ptr[n]);
+	printf("\n");
+}
+
 
 /**
  * main - entry point
@@ -26,23 +44,4 @@ int main(int argc, char *argv[])
 	}
 	print_opcodes(atoi(argv[1]));
 	return (0);
-}
-
-/**
- * print_opcodes - prints opcodes
- *
- * @opcde: int argument
- *
- * Return: nothing
- */
-
-void print_opcodes(int opcde)
-{
-	int n;
-	unsigned char *ptr;
-
-	ptr = (unsigned char *)print_opcodes;
-	for (n = 0; n < opcde; n++)
-		printf("%02x ", ptr[n]);
-	printf("\n");
 }
