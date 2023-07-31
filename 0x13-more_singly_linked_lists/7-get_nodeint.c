@@ -21,7 +21,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		{
 			return (head);
 		}
-		n++
+		n++;
 	}
 	return (NULL);
 }
