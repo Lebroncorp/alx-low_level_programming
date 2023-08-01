@@ -8,22 +8,26 @@
  * @index: is the index of the node that
  * should be deleted. Index starts at 0
  *
- * Returns: 1 if it succeeded, -1 if it failed
+ * Return: if it succeeds 1, if it fails -1
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *temp;
+	listint_t *temp2;
 	unsigned int n = 0;
 
 	while (*head != NULL)
 	{
-		if (n == index)
+		if (n < index)
 		{
 			temp = *head;
 			*head = (*head)->next;
-			
-			free (temp);
+			temp2 = *head;
+			*head = (*head)->next;
+			temp->next = *head;
+			*head = temp;
+			free(temp2);
 			return (1);
 		}
 		*head = (*head)->next;
