@@ -3,10 +3,9 @@
 /**
  * preMain - function that prints before main
  *
- * Description: Apply the constructor attribute
- * to myStartupFun() so that it is executed before main()
+ * Description: Apply the constructor attribute to myStartupFun() so that it
+ * is executed before main()
  */
-
 void preMain(void) __attribute__ ((constructor));
 
 void preMain(void)
