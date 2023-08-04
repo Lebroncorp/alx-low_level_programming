@@ -14,8 +14,12 @@ unsigned int binary_to_uint(const char *b)
 	int len = strlen(b), add, i, power, mul = 1;
 	unsigned int sum = 0;
 
+	if (b[i] == NULL)
+		return (0);
 	for (i = 0; b[i] != NULL; i++)
 	{
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
 		mul = 1;
 		for ( power = 0 ; power < len - i; power++)
 		{
