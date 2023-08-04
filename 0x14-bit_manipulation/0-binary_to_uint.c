@@ -21,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
 		mul = 1;
-		for ( power = 0 ; power < len - i; power++)
+		for (power = 0 ; power < len - i; power++)
 		{
 		if (power == 0)
 			mul = mul * 1;
