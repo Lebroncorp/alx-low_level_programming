@@ -23,10 +23,10 @@ unsigned int binary_to_uint(const char *b)
 		mul = 1;
 		for (power = 0 ; power < len - i; power++)
 		{
-		if (power == 0)
-			mul = mul * 1;
-		else
-		mul = mul * 2;
+			if (power == 0)
+				mul = mul * 1;
+			else
+				mul = mul * 2;
 		}
 		add = (b[i] - '0') * mul;
 		sum = sum + add;
